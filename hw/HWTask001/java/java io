@@ -1,0 +1,35 @@
+java io
+	inputStream, outputStream - байтовые потоки
+	Reader, Writer - символьные потоки
+
+
+	inputStream - реализует интерфейс AoutoCloseable, Closeable
+		int available()
+		void close()
+		void mark(int колбайт)
+		boolean markSupported()
+		int read()
+		int read(byte буфер[])
+		int read(byte буфер[], int смещение, int колбайт)
+		void reset()
+		long skip(long колбайт)
+
+	outputStream -  AoutoCloseable, Closeable, Flushable
+		int close()
+		void flush() -  финализирует входное состояние, очищая все буферы вывода.
+		void write(int b) - заисывает байт в выходной поток
+		void write(byte буффер[]) - записывает полный массив байтов в выходной поток
+		void write(byte буффер[],int колбайт)  - записывает диапазон из массива
+
+
+	FileOutputStream - создает обьект outputStream который можно использовать для записи байтов в файл. AoutoCloseable, Closeable, Flushable
+
+	ByteArrayInputStream - реализация выходного потока, использующего байтовый массив в качстве источника данных.
+	ByteArrayOutputStream - байтовый массив в качестве места назначения
+
+
+	Буферизируемы потоки байтов.
+
+	BufferedInputStream - позволяет заключить в оболочку любой пото класса inputStream/
+	BufferedOutputStream - доп метод flush() - обеспечение записи данных.
+	DataInputStream, DataOutputStream -  читать и писать элеметарный данные в поток и из него

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script type="application/javascript" src="/js/jquery-2.1.4."></script>
+        <script type="application/javascript" src="/js/script.js"></script>
+        <meta charset="utf-8">
+        <title>OAFL</title>
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+        
+        <h1> OAFL </h1>
+        <h2> OPEN AMATURE FOOTBALL LEAGUE </h2>
+        
+        
+        
+        <div class="div1">
+         <form action='/oafl' method="post">
+           <table class="table2" >
+            <tr>
+                <td >
+                    Заголовок
+                    <div ><input type="text" /></div>
+                    <div >Новость</div>
+                    <div ><textarea id="news" rows='10' cols='45' name="mytruestory"></textarea></div>
+                    <div id="counterStory"> 0 </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <input type="submit" value="отправить"/>
+                        
+                    </div>
+                </td>
+                
+            </tr>
+             <tr>
+                <td >
+                    <a href="../HWTask001/task001.html" class="c" > Main page </a>
+                </td>
+            </tr>
+          </table>
+        </form>
+        </div>
+     <script type="application/javascript">
+        var obj = document.getElementById("news");
+        obj.oninput = function () {
+            var mytruestory = document.getElementById("news");
+            document.getElementById("counterStory").innerText = mytruestory.value.length;
+        };
+    </script>
+	</body>
+</html>

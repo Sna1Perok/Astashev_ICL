@@ -1,0 +1,45 @@
+h1, h2{
+    text-align: center;
+        font-family: cursive
+
+}
+h1{
+    color: 
+}
+h2{
+    color:dimgrey
+}
+body {
+    background-image: url(giftly.png);
+}
+
+
+.div1{
+    text-align: center;
+}
+
+.table1 {
+    margin: auto;
+    border-style: dashed;
+    font-family: cursive;
+    font-weight: 900
+        
+}
+.table2 {
+    margin: auto;
+    font-family: cursive;
+    font-weight: 900
+        
+}
+ .c {
+    border: 1px solid #333; /* Рамка */
+    display: inline-block;
+    padding: 5px 15px; /* Поля */
+    text-decoration: none; /* Убираем подчёркивание */
+    color: #000; /* Цвет текста */
+  }
+   .c:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
+    background: linear-gradient(to bottom, #fcfff4, #e9e9ce); /* Градиент */
+    color: #a00;
+   }
