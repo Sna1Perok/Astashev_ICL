@@ -1,16 +1,15 @@
+body{
+    margin: auto;
+}
+td{
+ text-align: center;
+}
 h1, h2{
     text-align: center;
-        font-family: cursive
-
-}
-h1{
-    color: 
-}
-h2{
-    color:dimgrey
+    font-family: cursive
 }
 body {
-    background-image: url(giftly.png);
+    background-image: url(image/giftly.png);
 }
 
 
@@ -18,15 +17,32 @@ body {
     text-align: center;
 }
 
+
 .table1 {
+     border-radius: 10px 10px 10px 10px;
     margin: auto;
     border-style: dashed;
     font-family: cursive;
     font-weight: 900
-        
+        }
+
+.sentececenter{
+    text-align: center;
+}
+.senteceright{
+    text-align: right;
+}
+.senteceleft{
+    text-align: left;
+}
+
+.sentece{
+    color: red;
 }
 .table2 {
+    align-content: center;
     margin: auto;
+    border-style: double;
     font-family: cursive;
     font-weight: 900
         
@@ -43,3 +59,117 @@ body {
     background: linear-gradient(to bottom, #fcfff4, #e9e9ce); /* Градиент */
     color: #a00;
    }
+
+#idselector{
+    color: aqua;
+}
+
+td a{
+    color: blue;
+}
+#sidebar, #content { 
+    top: 71px;
+    position: absolute;
+     overflow: hidden; 
+     padding: 40px; 
+    bottom: -200px;
+}
+#content {
+    left: 170px; /* Расстояние от левого края */ 
+    right: 0;
+   }
+#header{
+    margin: auto;
+    height: 70px ;
+    border-bottom: 2px solid #7B5427;
+    background:  #FEDFC0;
+}
+#header h1 { 
+    padding: 15px; 
+    margin: 0; 
+}
+
+#sidebar{
+    position: absolute;
+    width: 100;
+    background: rgba(49, 255, 0, 0.24);
+    border-right: 2px  solid #7B5427;
+}
+
+
+/*fixed position*/
+
+#footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+    color: blue;
+    width: 20%;
+    font-family: cursive;
+}
+ 
+
+    
+/*уголки*/
+
+.block{
+background: green;
+color: red;
+border-radius: 10px;
+padding: 10px;
+position: relative;
+box-shadow: 0 0 7px #100;
+}
+.block::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: 15px; bottom: -20px; /* Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-top: 10px solid green; /* Добавляем треугольник */
+   }
+
+/*
+относительное позиционирование
+*/
+
+#h1{
+    padding: 10px;
+    text-align: center;
+    background: rgba(49, 255, 0, 0.24);
+}
+#h1 span{
+    position: relative;
+    font-family: cursive;
+    bottom: -17px;
+    font-size: xx-large
+}
+
+/*
+вложенные слои
+*/
+
+
+#outLayers{
+    position: relative;
+    float: left;
+    margin: 0 6px 4px 0;
+}
+#inLayers{
+    position: absolute;
+    bottom: 460px;
+    right: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
